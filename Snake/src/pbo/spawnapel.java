@@ -37,8 +37,8 @@ Random random;
 		public void spawnobjectt() {
 			// TODO Auto-generated method stub
 		
-	            x = generateRandomNumber(0, SCREEN_WIDTH/UNIT_SIZE)*UNIT_SIZE;
-	            y = generateRandomNumber(0, SCREEN_HEIGHT/UNIT_SIZE)*UNIT_SIZE;
+			x = generateRandomNumber(0, SCREEN_WIDTH/UNIT_SIZE)*UNIT_SIZE;
+	        y = generateRandomNumber(0, SCREEN_HEIGHT/UNIT_SIZE)*UNIT_SIZE;
 		}
 
 	    

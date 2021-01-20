@@ -22,6 +22,7 @@ import javax.swing.Timer;
 		int countApple;
 		int appleX;
 		int appleY;
+		int appleGreenX, appleGreenY;
 		char direction = 'R';
 		boolean inGame = false;
 		Timer timer;
@@ -60,11 +61,12 @@ import javax.swing.Timer;
 			appleY = apel.getY(); 
 			    
 		}
+		
 		private void locategreenapple(){
 			greenapple.locategreen();
-			appleX = greenapple.getX();
-			appleY = greenapple.getY();	
-			}
+			appleGreenX = greenapple.getX();
+			appleGreenY = greenapple.getY();	
+		}
 
 		private void loadImage() {
 			ImageIcon iid = new ImageIcon("src/pbo/bodyfixbet.png");
@@ -94,7 +96,7 @@ import javax.swing.Timer;
 				
 				
 				g.drawImage(apple, appleX, appleY, this);
-				g.drawImage(greenApple, appleX, appleY, this);
+				g.drawImage(greenApple, appleGreenX, appleGreenY, this);
    
 					for (int z = 0; z < bodyPart; z++) {
 						if (z == 0) {
